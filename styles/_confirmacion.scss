@@ -1,0 +1,62 @@
+/*===========================================
+      CONFIGURACION HTML CONFIRMACION
+============================================*/
+.volverBtn {
+  position: relative;
+  top: 1rem;
+  right: 10rem;
+  &:hover {
+    box-shadow: 0 4px 16px #fbaf32;
+    transition: all 0.2s ease;
+  }
+}
+
+@media (max-width: 550px) {
+  .volverBtn {
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+  }
+}
+
+.tituloConfirmacion {
+  color: white;
+  text-align: center;
+}
+
+.datos {
+  margin-top: 5rem;
+  h2 {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+  }
+}
+
+.textoForm {
+  color: white;
+}
+
+.confirmarBtn {
+  position: relative;
+  left: 11rem;
+  &:hover {
+    box-shadow: 0 4px 16px #fbaf32;
+    transition: all 0.2s ease;
+  }
+}
+
+@media (max-width: 550px) {
+  .confirmarBtn {
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+  }
+}
+
+.confirmacionImg {
+  text-align: center;
+  margin-top: 10rem;
+  display: none;
+}

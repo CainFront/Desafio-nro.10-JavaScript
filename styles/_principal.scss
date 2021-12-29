@@ -1,5 +1,5 @@
 body {
-  background-color: #161616;
+  background-color: rgb(22, 22, 22);
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 
 header {
   padding-top: 20px;
-  background-color: #323232;
+  background-color: rgb(50, 50, 50);
   text-align: center;
 }
 
@@ -85,25 +85,22 @@ ul {
 .contenido-hero {
   margin-top: 80px;
   color: white;
-}
-
-.contenido-hero h2 {
-  color: white;
-  font-size: 6rem;
-  font-weight: bold;
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-shadow: 4px 3px 0 #7a7a7a;
-}
-
-.contenido-hero h2:hover {
-  text-shadow: 4px 3px 0 #181818;
-}
-
-.contenido-hero p {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.6rem;
-  text-align: center;
+  h2 {
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-shadow: 4px 3px 0 #7a7a7a;
+    &:hover {
+      text-shadow: 4px 3px 0 #181818;
+    }
+  }
+  p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 
 .contenido-hero form {
@@ -131,7 +128,6 @@ ul {
   background-repeat: no-repeat;
   border: none;
 }
-
 .barra {
   padding: 20px 0;
   background-color: #fbaf32;
@@ -195,7 +191,6 @@ ul {
   padding: 10px 20px;
   color: white;
 }
-
 .info-card p,
 .card h4 {
   margin-bottom: 5px;
@@ -226,74 +221,3 @@ ul {
   font-size: 1.4rem;
   font-weight: bold;
 }
-
-/*===========================================
-      CONFIGURACION HTML CONFIRMACION
-============================================*/
-.volverBtn {
-  position: relative;
-  top: 1rem;
-  right: 10rem;
-}
-
-.volverBtn:hover {
-  -webkit-box-shadow: 0 4px 16px #fbaf32;
-          box-shadow: 0 4px 16px #fbaf32;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-@media (max-width: 550px) {
-  .volverBtn {
-    position: relative;
-    top: 0rem;
-    right: 0rem;
-  }
-}
-
-.tituloConfirmacion {
-  color: white;
-  text-align: center;
-}
-
-.datos {
-  margin-top: 5rem;
-}
-
-.datos h2 {
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  font-weight: bold;
-}
-
-.textoForm {
-  color: white;
-}
-
-.confirmarBtn {
-  position: relative;
-  left: 11rem;
-}
-
-.confirmarBtn:hover {
-  -webkit-box-shadow: 0 4px 16px #fbaf32;
-          box-shadow: 0 4px 16px #fbaf32;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-@media (max-width: 550px) {
-  .confirmarBtn {
-    position: relative;
-    top: 0rem;
-    right: 0rem;
-  }
-}
-
-.confirmacionImg {
-  text-align: center;
-  margin-top: 10rem;
-  display: none;
-}
-/*# sourceMappingURL=main.css.map */
