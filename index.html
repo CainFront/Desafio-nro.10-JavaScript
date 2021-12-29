@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/skeleton.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Paladar Negro</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <h1><img src="./img/logo.png" alt="logo" />Paladar Negro</h1>
+          </div>
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <img src="./img/cart.png" alt="carrito" />
+                <div id="carrito">
+                  <p class="vacio">Carrito</p>
+                  <table id="lista-carrito" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Imagen</th>
+                        <th>Menu</th>
+                        <th>Precios</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                  <a
+                    href="./secciones/confirmacion.html"
+                    id="iniciar-compra"
+                    class="button button-primary u-full-width"
+                    >Iniciar Compra</a
+                  >
+                  <a href="#" id="borrar-carrito" class="button u-full-width"
+                    >Borrar Carrito</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <div class="contenido-hero">
+              <h2>TU MEJOR OPCION</h2>
+              <p>
+                La verdadera Experiencia Gourmet, pero con porciones de verdad.
+              </p>
+              <form>
+                <input
+                  class="u-full-width"
+                  type="text"
+                  placeholder="¿Que te gustaria comer?"
+                  id="buscador"
+                />
+                <input type="submit" class="submit-buscador" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="barra">
+      <div class="container">
+        <div class="row">
+          <div class="four columns icono icono1">
+            <p>
+              Mas de 20 tipos de Hamburgesas <br />
+              Recetas preparadas por Chefs
+            </p>
+          </div>
+          <div class="four columns icono icono2">
+            <p>
+              Con Bebidas Gratis de: <br />
+              2:30AM a 2:32AM, te lo vas a perder...
+            </p>
+          </div>
+          <div class="four columns icono icono3">
+            <p>
+              Mas de 200 Ingredientes <br />
+              Materia prima traida de Uruguay
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================MENU======================== -->
+    <div id="lista-platillos" class="container">
+      <h1 class="encabezado">Menu Digital</h1>
+
+      <div class="row">
+        <!-- Menu 1 -->
+        <div class="four columns">
+          <div class="card">
+            <img src="img/platillo1.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Menu N°1</h4>
+              <p>Bebida ilimitada</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$50 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button input agregar-carrito"
+                data-id="1"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Menu 2 -->
+        <div class="four columns">
+          <div class="card">
+            <img src="img/platillo2.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Menu N°2</h4>
+              <p>Bebida ilimitada</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$50 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button input agregar-carrito"
+                data-id="2"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Menu 3 -->
+        <div class="four columns">
+          <div class="card">
+            <img src="img/platillo3.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Menu N°3</h4>
+              <p>Bebida ilimitada</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$50 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button input agregar-carrito"
+                data-id="3"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Menu 4 -->
+        <div class="four columns">
+          <div class="card">
+            <img src="img/platillo4.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Menu N°4</h4>
+              <p>Bebida ilimitada</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$50 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button input agregar-carrito"
+                data-id="4"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Menu 5 -->
+        <div class="four columns">
+          <div class="card">
+            <img src="img/platillo5.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Menu N°5</h4>
+              <p>Bebida ilimitada</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$50 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button input agregar-carrito"
+                data-id="5"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Menu 6 -->
+        <div class="four columns">
+          <div class="card">
+            <img src="img/platillo1.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Menu N°6</h4>
+              <p>Bebida ilimitada</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$50 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button input agregar-carrito"
+                data-id="6"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Menu 7 -->
+        <div class="four columns">
+          <div class="card">
+            <img src="img/platillo2.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Menu N°7</h4>
+              <p>Bebida ilimitada</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$50 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button input agregar-carrito"
+                data-id="7"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Menu 8 -->
+        <div class="four columns">
+          <div class="card">
+            <img src="img/platillo3.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Menu N°8</h4>
+              <p>Bebida ilimitada</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$50 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button input agregar-carrito"
+                data-id="8"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Menu 9 -->
+        <div class="four columns">
+          <div class="card">
+            <img src="img/platillo4.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Menu N°9</h4>
+              <p>Bebida ilimitada</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$50 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button input agregar-carrito"
+                data-id="9"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============FIN DE MENU========================= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <nav class="menu">
+              <a href="#" class="enlace">Retirlo por Local</a>
+              <a href="#" class="enlace">Llevar a Domicilio</a>
+              <a href="#" class="enlace">Pedidos por PedidosYa</a>
+            </nav>
+          </div>
+          <div class="four columns">
+            <nav class="menu">
+              <a href="#" class="enlace">Ubicacion</a>
+              <a href="#" class="enlace">Contacto</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./javaScript/codigo.js"></script>
+  </body>
+</html>

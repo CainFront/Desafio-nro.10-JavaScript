@@ -1,0 +1,271 @@
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+header {
+  padding-top: 20px;
+  background-color: rgb(50, 50, 50);
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  header {
+    text-align: left;
+  }
+}
+
+.borrar-platillo {
+  background-color: #fbaf32;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  height: 551px;
+  background-size: cover;
+  background-position: center;
+}
+
+.encabezado {
+  margin: 30px;
+  color: white;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+
+.submenuUno {
+  display: hidden;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: #17181b;
+  padding: 20px;
+  border-radius: 5%;
+}
+
+.vacio {
+  padding: 10px;
+  background-color: #fbaf32;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: #fbaf32;
+  border-radius: 10px;
+  color: black;
+}
+
+.contenido-hero {
+  margin-top: 80px;
+  color: white;
+}
+
+.contenido-hero form {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.contenido-hero form #buscador {
+  height: 50px;
+  margin-bottom: 0;
+  color: black;
+}
+
+.contenido-hero form .submit-buscador {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0;
+  display: block;
+  text-indent: -9999px;
+  width: 50px;
+  background-image: url(../img/lupa.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: none;
+}
+.barra {
+  padding: 20px 0;
+  background-color: #fbaf32;
+  background: -webkit-linear-gradient(left, #b95a00 0%, #ad5400 100%);
+}
+
+.barra p {
+  margin: 0;
+  color: white;
+}
+
+.icono {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+  background-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  .icono {
+    margin-bottom: 0;
+  }
+}
+
+.icono1 {
+  background-image: url(../img/icono1.png);
+}
+
+.icono2 {
+  background-image: url(../img/icono2.png);
+}
+
+.icono3 {
+  background-image: url(../img/icono3.png);
+}
+
+#lista-platillos .row {
+  margin-bottom: 20px;
+}
+
+.agregar-carrito {
+  margin: 10px 0;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid rgba(92, 92, 92, 0.05);
+  background-color: #1d2124;
+  margin-top: 2rem;
+}
+
+@media (min-width: 550px) {
+  .card {
+    text-align: left;
+  }
+}
+
+.info-card {
+  padding: 10px 20px;
+  color: white;
+}
+.info-card p,
+.card h4 {
+  margin-bottom: 5px;
+}
+
+.info-card .precio {
+  text-decoration: line-through;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.info-card .precio span {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.footer {
+  margin-top: 40px;
+  padding-top: 40px;
+  background: #1d2124;
+}
+
+.footer .menu a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/*===========================================
+      CONFIGURACION HTML CONFIRMACION
+============================================*/
+
+.volverBtn {
+  position: relative;
+  top: 1rem;
+  right: 10rem;
+  &:hover {
+    box-shadow: 0 4px 16px #fbaf32;
+    transition: all 0.2s ease;
+  }
+}
+
+@media (max-width: 550px) {
+  .volverBtn {
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+  }
+}
+
+.tituloConfirmacion {
+  color: white;
+  text-align: center;
+}
+
+.datos {
+  margin-top: 5rem;
+  h2 {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+  }
+}
+
+.textoForm {
+  color: white;
+}
+
+.confirmarBtn {
+  position: relative;
+  left: 11rem;
+  &:hover {
+    box-shadow: 0 4px 16px #fbaf32;
+    transition: all 0.2s ease;
+  }
+}
+
+@media (max-width: 550px) {
+  .confirmarBtn {
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+  }
+}
+
+.confirmacionImg {
+  text-align: center;
+  margin-top: 10rem;
+  display: none;
+}

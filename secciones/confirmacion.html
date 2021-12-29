@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/skeleton.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Confirmacion - Paladar Negro</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="one columns">
+            <a class="volverBtn u-pull-left button" href="../index.html"
+              >Volver</a
+            >
+          </div>
+          <div class="six columns">
+            <h1><img src="../img/logo.png" alt="logo" />Paladar Negro</h1>
+          </div>
+          <div class="one columns">
+            <h2 class="tituloConfirmacion">|</h2>
+          </div>
+          <div class="four columns">
+            <h2 class="tituloConfirmacion">Confirmacion</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="six columns datos">
+          <h2 class="datosTitulo">Datos de contacto</h2>
+          <form>
+            <label for="EmailInput" class="textoForm">Ingresar email:</label>
+            <input
+              class="u-full-width"
+              type="email"
+              placeholder="Email"
+              id="EmailInput"
+            />
+            <label for="EnvioInput" class="textoForm">Medio de Envio</label>
+            <select class="u-full-width" id="EnvioInput">
+              <option value="Retira en Local">Retira en Local</option>
+              <option value="Delivery a Domicilio">Delivery a domicilio</option>
+              <option value="PedidoYa">PedidoYa</option>
+              <option value="Otros">Otros</option>
+            </select>
+            <label for="MensajeInput" class="textoForm">Mensaje</label>
+            <textarea
+              class="u-full-width"
+              placeholder="Ejemplo: No tengo timbre..."
+              id="MensajeInput"
+            ></textarea>
+            <label class="example-send-yourself-copy">
+              <input type="checkbox" />
+              <span class="label-body">Deseo recibir spam a las 2:00AM</span>
+            </label>
+
+            <input
+              class="button-primary"
+              type="submit"
+              value="Confirmar"
+              id="confirmarBtn"
+              onclick="confirmar()"
+            />
+          </form>
+        </div>
+
+        <div class="five columns">
+          <img
+            src="../img/confirmacion.png"
+            alt="confirmacion de envio"
+            class="confirmacionImg"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="../javaScript/codigo.js"></script>
+  </body>
+</html>
